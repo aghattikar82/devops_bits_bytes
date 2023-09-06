@@ -1,0 +1,43 @@
+docker version: Displays the Docker version installed on your system.
+
+docker info: Provides detailed information about your Docker installation, including the number of containers and images.
+
+docker --help: Shows a list of available Docker commands with a brief description. You can also use docker [command] --help for specific command help.
+
+docker pull [image-name]: Downloads a Docker image from a container registry, such as Docker Hub.
+
+docker images: Lists all locally available Docker images. These images can be used to create containers.
+
+docker ps: Lists all running containers. The -a flag shows all containers, including stopped ones.
+
+docker run [options] [image-name] [command]: Runs a new container from an image. Options include -d (detached mode), -p (port mapping), -v (volume mounting), and more.
+
+docker stop [container-id or name]: Stops a running container gracefully.
+
+docker start [container-id or name]: Starts a stopped container.
+
+docker restart [container-id or name]: Restarts a running or stopped container.
+
+docker exec [options] [container-id or name] [command]: Executes a command in a running container. Commonly used with the -it flags for interactive mode.
+
+docker rm [container-id or name]: Removes one or more stopped containers. Use the -f flag to force removal of running containers.
+
+docker rmi [image-name]: Deletes a Docker image. Ensure no containers are using the image before removal.
+
+docker build [options] [path to Dockerfile]: Builds a Docker image from a Dockerfile and context directory. Options include -t to tag the image and -f to specify the Dockerfile.
+
+docker push [image-name]: Uploads a local Docker image to a container registry.
+
+docker network ls: Lists Docker networks, which allow containers to communicate with each other.
+
+docker volume ls: Lists Docker volumes, which are used for persisting data.
+
+docker-compose [command]: Manages multi-container applications defined in a docker-compose.yml file. Common commands include up, down, logs, and build.
+
+docker logs [container-id or name]: Displays the logs of a running container.
+
+docker inspect [container-id or name]: Provides detailed information about a container, including its configuration, network settings, and more.
+
+docker cp [container-id or name]:[source] [destination]: Copies files or directories from a container to the host or vice versa.
+
+docker commit [container-id or name] [new-image-name]: Creates a new Docker image from a modified container.
